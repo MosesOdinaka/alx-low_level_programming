@@ -1,10 +1,8 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
  *Return: 0
  */
-
 int main(void)
 {
 fprintf(stdout, "Size of a char: %zu byte(s)\n", sizeof(char));
@@ -14,5 +12,4 @@ fprintf(stdout, "Size of a long long int: %zu byte(s)\n", sizeof(long long int))
 fprintf(stdout, "Size of a float %zu byte(s)\n", sizeof(float));
 fprintf(stdout, "\n");
 fprintf(stderr, "[Anything]\n");
-return (0);
-}
+return (0);}
