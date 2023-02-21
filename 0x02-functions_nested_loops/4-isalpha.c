@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * _
- * is_alpha - For alphsbet char.
+ *_isalpha - For alphsbet char.
  * @c: Character to check.
  * Return: 1 for alphabet char or 0 for anything else.
  */
