@@ -14,6 +14,6 @@ int main(void)
 	fprintf(stdout, "Size of a long long int: %zu byte(s)\n", sizeof(long long int));
 	fprintf(stdout, "Size of a float %zu byte(s)\n", sizeof(float));
 	fprintf(stdout, "\n");
-	fprintf(stderr, "There is only one character\n");
+	fprintf(stderr, "[Anything]\n");
 	return (0);
 }
