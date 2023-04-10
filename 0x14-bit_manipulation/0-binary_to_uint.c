@@ -9,13 +9,13 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int n;
+	unsigned int un;
 	int lent, base_two;
 
 	if (!b)
 	return (0);
 
-	n = 0;
+	un = 0;
 
 	for (lent = 0; b[lent] != '\0'; lent++)
 	;
@@ -29,9 +29,9 @@ unsigned int binary_to_uint(const char *b)
 
 		if (b[lent] & 1)
 		{
-		n += base_two;
+		un += base_two;
 		}
 	}
 
-	return (n);
+	return (un);
 }
