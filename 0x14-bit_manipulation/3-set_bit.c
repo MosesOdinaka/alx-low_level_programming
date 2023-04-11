@@ -1,3 +1,4 @@
+
 #include "main.h"
 
 /**
@@ -10,12 +11,10 @@
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned int p;
-
-	if (index > 63)
-		return (-1);
-		P = 1 << index;
-		*n = (*n | p);
-
-	return (1);
+	if (index <= 63)
+	{
+		*n = (*n | (1 << index));
+		return (1);
+	}
+	return (-1);
 }
