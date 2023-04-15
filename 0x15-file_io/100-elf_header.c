@@ -1,4 +1,3 @@
-
 /**
  * File: 100-elf_header.c
  * Author: Iriele Odinaka Moses
@@ -318,4 +317,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	close_elf(a);
 	return (0);
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9bc7722eceeef223ceaa93ee0f506bcb154b2bb3
