@@ -56,4 +56,6 @@ int main(int argc, char **argv) {
             break;
         case ELFDATA2MSB:
             printf("2's complement, big endian\n");
-            break;
+	    break;
+    }
+}
