@@ -37,4 +37,23 @@ int main(int argc, char **argv) {
             printf("none\n");
             break;
         case ELFCLASS32:
-
+            printf("ELF32\n");
+            break;
+        case ELFCLASS64:
+            printf("ELF64\n");
+            break;
+        default:
+            printf("<unknown: %x>\n", header.e_ident[EI_CLASS]);
+            break;
+    }
+    printf(" Data: ");
+    switch (header.e_ident[EI_DATA]) {
+        case ELFDATANONE:
+            printf("none\n");
+            break;
+        case ELFDATA2LSB:
+            printf("2's complement, little endian\n");
+            break;
+        case ELFDATA2MSB:
+            printf("2's complement, big endian\n");
+            break
