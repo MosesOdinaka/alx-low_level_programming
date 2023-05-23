@@ -58,4 +58,5 @@ int main(int argc, char **argv) {
             printf("2's complement, big endian\n");
 	    break;
     }
+    Return (0);
 }
