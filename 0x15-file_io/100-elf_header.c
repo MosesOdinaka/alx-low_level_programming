@@ -5,7 +5,7 @@
 #include <elf.h>
 
 int main(int argc, char **argv) {
-    int fd;
+    int fd, i;
     ssize_t bytes_read;
     Elf64_Ehdr header;
     if (argc != 2) {
@@ -29,7 +29,7 @@ int main(int argc, char **argv) {
         exit(98);
     }
     printf("ELF Header:\n Magic: ");
-    for (int i = 0; i < EI_NIDENT; i++)
+    for (i = 0; i < EI_NIDENT; i++)
         printf("%02x ", header.e_ident[i]);
     printf("\n Class: ");
     switch (header.e_ident[EI_CLASS]) {
@@ -56,4 +56,4 @@ int main(int argc, char **argv) {
             break;
         case ELFDATA2MSB:
             printf("2's complement, big endian\n");
-            break
+            break;
