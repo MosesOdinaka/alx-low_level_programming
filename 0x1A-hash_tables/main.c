@@ -17,5 +17,7 @@ int main(void)
 	hash = hash_djb2((unsigned char *)s);
 	printf("%lu\n", hash);
 
+	printf("%lu\n", key_index((unsigned char *)s, ht->size));
+
 	return (EXIT_SUCCESS);
 }
