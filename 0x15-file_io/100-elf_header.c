@@ -9,6 +9,7 @@ int main(int argc, char **argv)
 	int fd, i;
 	ssize_t bytes_read;
 	Elf64_Ehdr header;
+
 	if (argc != 2)
 	{
 		fprintf(stderr, "Usage: %s elf_filename\n", argv[0]);
@@ -31,8 +32,8 @@ int main(int argc, char **argv)
 			!= ELFMAG1 || header.e_ident[EI_MAG2] != ELFMAG2 ||
 			header.e_ident[EI_MAG3] != ELFMAG3)
 	{
-		fprintf(stderr, "%s: Error: Not an ELF file - it has the
-				wrong magic bytes at the start\n", argv[0]);
+		fprintf(stderr, "%s: Error: Not an ELF file - it has the"
+				"wrong magic bytes at the start\n", argv[0]);
 		close(fd);
 		exit(98);
 	}
